@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ativ 5</title>
+
+    <script>
+        var n1 = Number(prompt('Insira um número'));
+        var n2 = Number(prompt('Insira outro número'));
+
+        
+        operacoes();
+        
+        function operacoes(){
+            var escolha = prompt('Escolha uma das operações: 1) Somar  2) Subtrair  3) Multiplicar  4) Dividir');
+
+            if(escolha == 1){
+                somar();
+            }
+            if(escolha == 2){
+                subtrair();
+            }
+            if(escolha == 3){
+                multiplicar();
+            }
+            if(escolha == 4){
+                dividir();
+            }
+            else{
+                alert('Por favor, insira um número entre 1 e 4');
+                operacoes();
+            }
+        }
+        
+        function somar(){
+            var total = n1+n2;
+            document.write('A soma de ' + n1 + ' e ' + n2 + ' é ' + total);
+        }
+
+        function subtrair(){
+            var total = n1-n2;
+            document.write('A subtração de ' + n1 + ' e ' + n2 + ' é ' + total);
+        }
+
+        function multiplicar(){
+            var total = n1*n2;
+            document.write('A multiplicação de ' + n1 + ' e ' + n2 + ' é ' + total);
+        }
+        function dividir(){
+            var total = n1/n2;
+            document.write('A divisão de ' + n1 + ' e ' + n2 + ' é ' + total);
+        }
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
